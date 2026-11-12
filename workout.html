@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitStreak | Workouts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="workout">
+    <header class="fit">
+        <a href="index.html" class="logo">FitStreak</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bmi.html">BMI</a>
+            <a href="workout.html" class="active">Workouts</a>
+        </nav>
+    </header>
+ 
+    <main>
+        <h1>Workout Plans</h1>
+ 
+        <div class="tabs">
+            <button type="button" class="tab active" data-level="beginner">Beginner</button>
+            <button type="button" class="tab" data-level="intermediate">Intermediate</button>
+            <button type="button" class="tab" data-level="advanced">Advanced</button>
+        </div>
+ 
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercise</th>
+                        <th>Sets</th>
+                        <th>Reps</th>
+                        <th>Rest</th>
+                    </tr>
+                </thead>
+                <tbody id="plan"></tbody>
+            </table>
+        </div>
+ 
+        <p id="leveltip"></p>
+
+        <h2 class="gallery-title">Exercise Guide</h2>
+        <div class="gallery" id="gallery"></div>
+    </main>
+ 
+    <script src="workout.js"></script>
+</body>
+</html>

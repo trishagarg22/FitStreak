@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitStreak | BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bmi">
+    <header class="fit">
+        <a href="index.html" class="logo">FitStreak</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bmi.html" class="active">BMI</a>
+            <a href="workout.html">Workouts</a>
+        </nav>
+    </header>
+ 
+    <main>
+        <h1>Measure your Body-Mass Index</h1>
+ 
+        <form id="bmi-form" novalidate>
+            <fieldset>
+                <label for="weight">Weight (in kg): </label>
+                <input type="number" name="weight" id="weight" placeholder="Enter weight" min="1" step="any">
+                <br><br>
+                <label for="height">Height (in cm): </label>
+                <input type="number" name="height" id="height" placeholder="Enter height" min="1" step="any">
+                <p id="error" class="error" role="alert"></p>
+                <button type="submit">Calculate</button>
+            </fieldset>
+        </form>
+ 
+        <fieldset id="result-card" hidden>
+            <legend>RESULT CARD</legend>
+            <p>Your BMI: <strong id="result">0</strong></p>
+            <p id="category" class="category"></p>
+        </fieldset>
+ 
+        <fieldset>
+            <legend>RANGE TABLE</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>BMI Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-cat="under">
+                        <td>Underweight</td>
+                        <td>below 18.5</td>
+                    </tr>
+                    <tr data-cat="normal">
+                        <td>Normal</td>
+                        <td>18.5 - 24.9</td>
+                    </tr>
+                    <tr data-cat="over">
+                        <td>Overweight</td>
+                        <td>25 - 29.9</td>
+                    </tr>
+                    <tr data-cat="obese">
+                        <td>Obese</td>
+                        <td>30 and above</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+ 
+        <p class="note"><strong>NOTE: BMI is a rough guide, not medical advice.</strong></p>
+    </main>
+
+    <script src="bmi.js"></script>
+</body>
+</html>
