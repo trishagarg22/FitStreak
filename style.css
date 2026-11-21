@@ -42,9 +42,11 @@ h3{
 .cards{
     display: flex;
     align-items: center;
+}
+.card{
     transition: transform 0.2s, box-shadow 0.2s;
 }
-.cards:hover{
+.card:hover{
     transform: translateY(-8px);
     box-shadow: 0px 6px 14px rgba(0,0,0,0.15);
 }
@@ -168,6 +170,7 @@ table, th, td{
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin: 10px;
 }
 .btn:hover{
     background-color: var(--pink-hover);
@@ -408,12 +411,13 @@ table, th, td{
 .workout .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 16px;
+    gap: 20px;
 }
 .workout .gallery figure{
     background: rgba(255, 255, 255, 0.88);
     border-radius: 12px;
     overflow: hidden;
+    margin: 0;
 }
 .workout .gallery img{
     display: block;
@@ -425,4 +429,18 @@ table, th, td{
     text-align: center;
     font-weight: 700;
     font-size: 0.9rem;
+}
+.safeins{
+    background: rgba(255, 255, 255, 0.88);
+    border-left: 6px solid rgb(214, 13, 120);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 32px;
+}
+.safeins h2{
+    color: #b00020;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 12px;
+
 }
