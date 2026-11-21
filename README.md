@@ -2,7 +2,7 @@
 
 FitStreak is a small, multi-page health and fitness website built with plain **HTML, CSS and JavaScript**. It offers daily wellness tips, a BMI calculator and beginner-to-advanced workout plans, all without any frameworks or libraries.
 
-**Live demo:** https://trishagarg22.github.io/fitstreak/
+**Live demo:** https://fitstreak-beryl.vercel.app/
 
 ## Features
 
