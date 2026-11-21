@@ -22,7 +22,12 @@ function showRandomTip() {
     } while (index === lastIndex);
 
     lastIndex = index;
+    tipText.classList.add("fade-out");
+
+setTimeout(function () {
     tipText.textContent = tips[index];
+    tipText.classList.remove("fade-out");
+}, 300);
 }
 
 tipBtn.addEventListener("click", showRandomTip);
