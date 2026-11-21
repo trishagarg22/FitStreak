@@ -36,6 +36,7 @@ const planBody = document.getElementById("plan");
 const levelTip = document.getElementById("leveltip");
 const gallery = document.getElementById("gallery");
 
+
 function showGallery(plan) {
     gallery.innerHTML = "";
  
