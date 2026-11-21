@@ -13,15 +13,11 @@ const tips = [
 const tipText = document.getElementById("tiptext");
 const tipBtn = document.getElementById("tipbtn");
 
-let lastIndex = -1;
+let currentIndex = 0;
 
-function showRandomTip() {
-    let index;
-    do {
-        index = Math.floor(Math.random() * tips.length);
-    } while (index === lastIndex);
-
-    lastIndex = index;
+function shownextTip() {
+    currentIndex=(currentIndex+1) % tips.length;
+    const index= currentIndex;
     tipText.classList.add("fade-out");
 
 setTimeout(function () {
@@ -30,4 +26,4 @@ setTimeout(function () {
 }, 300);
 }
 
-tipBtn.addEventListener("click", showRandomTip);
+tipBtn.addEventListener("click", shownextTip);
