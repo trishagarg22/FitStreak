@@ -51,17 +51,6 @@ fitstreak/
 └── images/             Exercise pictures for the workout page
 ```
 
-## How to Run Locally
-
-1. Download or clone the repository:
-   ```
-   git clone https://github.com/trishagarg22/fitstreak.git
-   ```
-2. Open the folder.
-3. Double-click `index.html` to open it in your browser.
-
-No installation or server is needed.
-
 ## How the Code Works
 
 Each page has its own JavaScript file, and every script follows the same pattern: find elements on the page, listen for a user action, then update the page.
