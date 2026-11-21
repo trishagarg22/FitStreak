@@ -13,7 +13,7 @@ const tips = [
 const tipText = document.getElementById("tiptext");
 const tipBtn = document.getElementById("tipbtn");
 
-let currentIndex = 0;
+let currentIndex = 1;
 
 function shownextTip() {
     currentIndex=(currentIndex+1) % tips.length;
